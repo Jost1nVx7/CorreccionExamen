@@ -68,6 +68,7 @@ public class Listar extends javax.swing.JFrame {
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // TODO add your handling code here:
+    this.dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     public void mostrarDatos(String msm){

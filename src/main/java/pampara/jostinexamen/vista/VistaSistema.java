@@ -90,6 +90,11 @@ public class VistaSistema extends javax.swing.JFrame {
         jMenuBar2.add(jMenuListar);
 
         jMenuSalir.setText("Salir");
+        jMenuSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuSalirActionPerformed(evt);
+            }
+        });
         jMenuBar2.add(jMenuSalir);
 
         setJMenuBar(jMenuBar2);
@@ -183,6 +188,11 @@ public class VistaSistema extends javax.swing.JFrame {
     private void txtProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProductoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtProductoActionPerformed
+
+    private void jMenuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(WIDTH);
+    }//GEN-LAST:event_jMenuSalirActionPerformed
 
     public String getProducto(){
         return txtProducto.getText();
